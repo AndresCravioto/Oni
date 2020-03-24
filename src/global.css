@@ -9,3 +9,23 @@
 .red {
    color: #a96b70
 }
+
+.blackText {
+    color: black;
+ }
+ 
+.alignLeft {
+    text-align: left;
+}
+
+.textOnImage {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+.carouselImageContainer {
+position: relative;
+text-align: center;
+color: white;
+}
