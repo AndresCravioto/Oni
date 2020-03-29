@@ -6,6 +6,10 @@
     color: #015e7a
 }
 
+.darkblueBackground {
+    background-color: #015e7a;
+}
+
 .red {
    color: #a96b70
 }
@@ -25,4 +29,8 @@
 .sidePaddings {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.flex {
+    display: flex;
 }
