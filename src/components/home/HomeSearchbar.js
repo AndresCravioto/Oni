@@ -3,7 +3,7 @@ import React, { useState} from "react";
 const HomeSearchbar = props => {
 
 return (
-    <div>
+    <div className="marginBot">
         <div className="hero is-medium is-primary is-bold">
             <div className="hero-body">
                 <div className="container">

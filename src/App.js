@@ -1,15 +1,16 @@
+import { Switch, Route } from 'react-router-dom';
 import React from 'react';
-import Navbar from './components/global/Navbar.js';
-import HomeSearchbar from './components/home/HomeSearchbar.js';
-import Carousel from './components/home/Carousel';
+import Home from './components/Pages/Home.js';
+import Categories from './components/Pages/Categories.js';
 
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <HomeSearchbar/>
-      <Carousel/>
+      <Switch>
+        <Route exact path='/' render={() => <Home/>}/>
+        <Route exact path='/categories' render={() => <Categories/>}/>
+      </Switch>
     </div>
   );
 }

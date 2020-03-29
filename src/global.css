@@ -13,19 +13,16 @@
 .blackText {
     color: black;
  }
- 
-.alignLeft {
-    text-align: left;
-}
 
-.textOnImage {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
+ .whiteText {
+     color: white;
+ }
 
-.carouselImageContainer {
-position: relative;
-text-align: center;
-color: white;
+ .boldText {
+     font-weight: bold;
+ }
+
+.sidePaddings {
+    padding-left: 50px;
+    padding-right: 50px;
 }
