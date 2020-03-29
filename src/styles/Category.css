@@ -1,0 +1,10 @@
+.categoryList {
+    display: table;
+    padding-top: 50px;
+}
+
+.categoryListItem {
+    width: 25%;
+    padding-right: 10px;
+    float: left;
+}
