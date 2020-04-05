@@ -16,7 +16,7 @@ export default class Carousel extends Component {
         pauseOnHover: true
       };
       return (
-        <div className="sidePaddings">
+        <div className="sidePaddings bottomMargin50">
             <h1 className="carouselTitle">Popular Categories</h1>
           <Slider {...settings} className="hasShadow">
           <div className="carouselImageContainer">

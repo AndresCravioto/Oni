@@ -9,7 +9,7 @@ const WhiteSpace = props => {
 */
 
 return (
-    <div>
+    <div className="">
     </div>
     )
 }

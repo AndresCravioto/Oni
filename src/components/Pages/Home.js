@@ -3,6 +3,7 @@ import Navbar from "../global/Navbar.js";
 import WhiteSpace from "../global/WhiteSpace";
 import HomeSearchbar from "../home/HomeSearchbar.js";
 import Carousel from "../home/Carousel.js";
+import Footer from "../home/Footer.js";
 
 
 export default class Home extends Component {
@@ -12,7 +13,7 @@ export default class Home extends Component {
             <Navbar/>
             <HomeSearchbar/>
             <Carousel/>
-            <WhiteSpace/>
+            <Footer/>
         </div>
       );
     }

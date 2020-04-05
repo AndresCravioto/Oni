@@ -22,6 +22,10 @@
      color: white;
  }
 
+ .grayText {
+    color: gray;
+}
+
  .boldText {
      font-weight: bold;
  }
@@ -31,6 +35,24 @@
     padding-right: 50px;
 }
 
+.bottomMargin50 {
+    margin-bottom: 50px;
+}
+
+.sidePaddings100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .flex {
     display: flex;
+}
+
+.lineHeight {
+    line-height: 200%;
+}
+
+.topBorder {
+    border-bottom: 1px solid;
+    border-color: lightgray;
 }

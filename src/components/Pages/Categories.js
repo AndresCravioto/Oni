@@ -3,6 +3,7 @@ import Navbar from "../global/Navbar.js";
 import WhiteSpace from "../global/WhiteSpace";
 import Searchbar from "../global/Searchbar.js";
 import CategoryList from "../Category/CategoryList.js";
+import CategoryPageHeader from "../Category/CategoryPageHeader.js";
 
 
 export default class Home extends Component {
@@ -11,6 +12,7 @@ export default class Home extends Component {
         <div>
             <Navbar/>
             <Searchbar/>
+            <CategoryPageHeader/>
             <CategoryList/>
             <WhiteSpace/>
         </div>
