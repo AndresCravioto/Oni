@@ -7,14 +7,14 @@ import Footer from "../home/Footer.js";
 
 
 export default class Home extends Component {
-    render() {
-      return (
-        <div>
-            <Navbar/>
-            <HomeSearchbar/>
-            <Carousel/>
-            <Footer/>
-        </div>
-      );
-    }
+  render() {
+    return (
+      <div>
+          <Navbar/>
+          <HomeSearchbar/>
+          <Carousel/>
+          <Footer/>
+      </div>
+    );
   }
+}
