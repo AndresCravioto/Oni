@@ -24,7 +24,6 @@ const CreateCategoryForm = props => {
     const handleChange = (event) => {  
         const { name, value } = event.target;
         updateFormState(Object.assign({}, formState, {[name]: value}))
-        console.log(formState);
     }
 
     return (

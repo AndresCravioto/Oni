@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 
 const HomeSearchbar = props => {
 
@@ -21,10 +21,10 @@ return (
                 <div className="container">
                     <ul>
                     <li className="is-active">
-                        <a>Overview</a>
+                        <p>Overview</p>
                     </li>
                     <li>
-                        <a>Modifiers</a>
+                        <p>Modifiers</p>
                     </li>
                     </ul>
                 </div>

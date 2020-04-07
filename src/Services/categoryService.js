@@ -20,8 +20,9 @@ class CategoryService {
   }
 
   createCategory = categoryBody => {
-    return this.service.post('/category/create', categoryBody)
+    return this.service.post('/category/create', categoryBody, {headers: {'Content-Type': 'application/json', 'accept': 'application/json'}})
     .then(response => response.data)
+    .catch(error => console.log(error))
   }
 }
 
