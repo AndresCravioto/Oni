@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import CreateCategoryForm from "../Category/CreateCategoryForm.js";
+import Signup from "../auth/Signup.js";
 
 
 export default class Home extends Component {
     render() {
       return (
         <div>
-            <CreateCategoryForm/>
+            <Signup/>
         </div>
         );
     }

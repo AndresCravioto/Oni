@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../App.js';
 
 const Navbar = props => {
 
-    /*
-    const [logged, updateLogged ] = useState([1, 'hola']);
-    
-    updateLogged([2, 'adios']);
-*/
+    const { loginState } = useContext(AuthContext);
+
+    const token = loginState.token;
+
+    console.log(token);
 
 return (
         <div>
@@ -29,14 +31,20 @@ return (
                     <div className="navbar-end">
                         <div className="navbar-item">
                         <div className="buttons">
-                            <button className="button red is-outlined">Login</button>
-                            <button className="button darkblue is-outlined">Signup</button>
+                            <Link className="button darkblue" to='/signup'>
+                                Signup
+                            </Link>
+                            <Link className="button darkblue" to='/login'>
+                                Login
+                            </Link>
                         </div>
                         </div>
                     </div>
                 </div>
             </nav>
 
+            <div>
+            </div>
         </div>    // return some jsx here
     )
 }

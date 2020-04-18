@@ -12,7 +12,7 @@ export default class Carousel extends Component {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 16750,
+        autoplaySpeed: 6750,
         pauseOnHover: true
       };
       return (
