@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import {login} from '../../Services/authService.js';
 import { AuthContext } from '../../App.js';
+import axiosProvider from '../../Services/axiosProvider.js';
 
 const LoginForm = props => {
 
@@ -16,6 +17,8 @@ const LoginForm = props => {
         login(formState)      
         .then(response => {
             localStorage.setItem('token', response.data.token)
+            localStorage.setItem('userId', response.data.userId)         
+            axiosProvider.defaults.headers.common['auth'] = response.data.token;
             setLoginState({token: response.data.token})
         })
         .catch(error => console.log(error))

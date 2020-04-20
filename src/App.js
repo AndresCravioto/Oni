@@ -6,6 +6,7 @@ import Categories from './components/Pages/Categories';
 import CreateCategory from './components/Pages/CreateCategory';
 import Login from './components/Pages/Login';
 import Signup from './components/Pages/Signup';
+import Profile from './components/Pages/Profile';
 
 export const AuthContext = React.createContext('hola');
 
@@ -28,6 +29,7 @@ return (
           <Route exact path='/categories/create' render={() => <CreateCategory/>}/>
           <Route exact path='/login' render={() => <Login/>}/>
           <Route exact path='/signup' render={() => <Signup/>}/>
+          <Route exact path='/profile' render={() => <Profile/>}/>
         </Switch>
       </div>
     </AuthContext.Provider>

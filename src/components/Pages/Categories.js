@@ -6,10 +6,26 @@ import CategoryPageHeader from "../Category/CategoryPageHeader.js";
 
 
 export default class Home extends Component {
+
+  handleSearch = (textToFilter) => {
+
+    let state = {
+      categories: '',
+      filterCategoriesBy: '',
+    }
+
+    this.setState({
+      filterCategoriesBy: textToFilter
+    });
+    console.log(this.state)
+  }
+
+  
+  
     render() {
       return (
         <div>
-            <Searchbar/>
+            <Searchbar setFilterCategories={this.handleSearch}/>
             <CategoryPageHeader/>
             <CategoryList/>
             <WhiteSpace/>
