@@ -30,7 +30,6 @@ return (
           <Route exact path='/login' render={() => <Login/>}/>
           <Route exact path='/signup' render={() => <Signup/>}/>
           <Route exact path='/profile' render={() => <Profile/>}/>
-          <Route exact path='/chat' render={() => <Chat/>}/>
         </Switch>
       </div>
     </AuthContext.Provider>
