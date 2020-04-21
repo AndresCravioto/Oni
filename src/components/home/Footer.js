@@ -8,36 +8,47 @@ return (
         <div className="">
             <div className="footerColumn lineHeight">
                 <br></br>
-                <p className="boldText">Primera Columna</p>
+                <p className="boldText">Categories</p>
                 <ul>
-                    <li>Categoría 1</li>
-                    <li>Categoría 2</li>
-                    <li>Categoría 3</li>
+                    <li>Food</li>
+                    <li>Gaming</li>
+                    <li>Sports</li>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Books</li>
                 </ul>
             </div>
             <div className="footerColumn lineHeight">
                 <br></br>
-                <p className="boldText">Segunda Columna</p>
+                <p className="boldText">About us</p>
                 <ul>
-                    <li>Categoría 1</li>
-                    <li>Categoría 2</li>
-                    <li>Categoría 3</li>
+                    <li>Press and News</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
                 </ul>
             </div>
             <div className="footerColumn lineHeight">
                 <br></br>
-                <p className="boldText">Tercer Columna</p>
+                <p className="boldText">Support</p>
                 <ul>
-                    <li></li>
+                    <li>Help and Support</li>
+                    <li>Meeting on </li>
                 </ul>
             </div>
             <div className="footerColumn lineHeight">
                 <br></br>
-                <p className="boldText">Cuarta Columna</p>
+                <p className="boldText">Community</p>
                 <ul>
-                    <li></li>
+                    <li>Events</li>
+                    <li>Blog</li>
+                    <li>Forum</li>
+                    <li>Community Standards</li>
+                    <li>Invite your friends!</li>
                 </ul>
             </div>
+        </div>
+        <div>
+            <p>sargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaes</p>
         </div>
         
     </div>
