@@ -47,9 +47,6 @@ return (
                 </ul>
             </div>
         </div>
-        <div>
-            <p>sargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaessargarwfaes</p>
-        </div>
         
     </div>
     )

@@ -56,3 +56,7 @@
     border-bottom: 1px solid;
     border-color: lightgray;
 }
+
+.topPadding5 {
+    padding-top: 5px;
+}

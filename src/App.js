@@ -9,6 +9,9 @@ import Signup from './components/Pages/Signup';
 import Profile from './components/Pages/Profile';
 import MemePage from './components/Pages/MemePage.js';
 import '../src/styles/memepage.css';
+import 'bulma/css/bulma.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import 'bulma-social/bin/bulma-social.min.css'
 
 export const AuthContext = React.createContext('hola');
 

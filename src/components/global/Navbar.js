@@ -14,8 +14,10 @@ return (
         <div>
             <nav className="navbar has-shadow is-transparent">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png"width="112" height="28" />
+                    <a className="navbar-item" href="wa">
+                        <Link className="logo" to='/'>
+                        <img src= '/images/memestack.png' width="120" height="" />        
+                        </Link>
                     </a>
                     <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
                         <span></span>
@@ -29,6 +31,28 @@ return (
                     </div>
 
                     <div className="navbar-end">
+                        <div className="topPadding5">
+                            <a class="button is-white is-medium is-facebook darkblue">
+                                <span class="icon">
+                                <i class="fab fa-facebook fa-lg darkblue"></i>
+                                </span>
+                            </a>
+                            <a class="button is-white is-medium is-twitter darkblue">
+                                <span class="icon">
+                                <i class="fab fa-twitter fa-lg darkblue"></i>
+                                </span>
+                            </a>
+                            <a class="button is-white is-medium darkblue">
+                                <span class="icon">
+                                <i class="fab fa-instagram fa-lg darkblue"></i>
+                                </span>
+                            </a>
+                            <a class="button is-white is-medium darkblue">
+                                <span class="icon">
+                                <i class="fab fa-youtube fa-lg darkblue"></i>
+                                </span>
+                            </a>
+                        </div>
                         <div className="navbar-item">
                         <div className="buttons">
                             <Link className="button darkblue" to='/signup'>
