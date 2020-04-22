@@ -7,6 +7,8 @@ import CreateCategory from './components/Pages/CreateCategory';
 import Login from './components/Pages/Login';
 import Signup from './components/Pages/Signup';
 import Profile from './components/Pages/Profile';
+import MemePage from './components/Pages/MemePage.js';
+import '../src/styles/memepage.css';
 
 export const AuthContext = React.createContext('hola');
 
@@ -30,6 +32,7 @@ return (
           <Route exact path='/login' render={() => <Login/>}/>
           <Route exact path='/signup' render={() => <Signup/>}/>
           <Route exact path='/profile' render={() => <Profile/>}/>
+          <Route exact path='/meme' render={() => <MemePage/>}/>
         </Switch>
       </div>
     </AuthContext.Provider>

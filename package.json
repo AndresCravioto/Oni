@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
     "bulma": "^0.8.1",
     "bulma-carousel": "^4.0.4",
     "dotenv": "^8.2.0",
@@ -15,6 +16,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-slick": "^0.25.2",
+    "reactstrap": "^6.5.0",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
