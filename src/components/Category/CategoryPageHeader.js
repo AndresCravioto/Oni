@@ -8,10 +8,10 @@ return (
             <div className="hero-body">
                 <div className="container">
                 <h1 className="title">
-                    Primary bold title
+                    Create your memes and share them
                 </h1>
                 <h2 className="subtitle">
-                    Primary bold subtitle
+                    Or look some
                 </h2>
                 </div>
             </div>

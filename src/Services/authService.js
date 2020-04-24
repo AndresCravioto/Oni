@@ -17,15 +17,12 @@ import axiosProdiver from './axiosProvider.js';
   }
 
   const updateUser = userBody => {
-    console.log(1)
     return axiosProdiver.patch(`/profile/${userBody.params.userid}`, userBody)
     .then(response => response.data)
     .catch(error => console.log(error))
   }
 
   const login = body => {
-    console.log(1);
-    console.log(axiosProdiver.defaults.headers.common);
     return axiosProdiver.post('/login', body);
   }
 

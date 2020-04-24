@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import {createUser} from '../../Services/authService.js';
+import { useHistory } from 'react-router-dom';
 
 const SignupForm = props => {
+
+    let history = useHistory();
 
     const [ formState, updateFormState ] = useState({
         email: '',
@@ -15,6 +18,7 @@ const SignupForm = props => {
             email: '',
             password: ''
         })
+        history.push('/')
     }
 
     const handleChange = (event) => {  
@@ -24,12 +28,12 @@ const SignupForm = props => {
 
     return (
         <div>
-            <form onSubmit={handleFormSubmit}>
-                <label>Email:</label>
-                    <input type="text" name="email" value={formState.email} onChange={ e => handleChange(e)}/>
+            <form className="center" onSubmit={handleFormSubmit}>
+                <label className="paddingLeft31">Email:</label>
+                    <input className="darkBlueBorder" type="text" name="email" value={formState.email} onChange={ e => handleChange(e)}/>
                 <label>Password:</label>
-                    <textarea name="password" value={formState.password} onChange={ e => handleChange(e)} />
-                <input type="submit" value="Submit" />
+                    <input className="darkBlueBorder" name="password" value={formState.password} onChange={ e => handleChange(e)} />
+                <input className="marginLeft120" type="submit" value="Submit" />
             </form>
         </div>
     )

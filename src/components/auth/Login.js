@@ -2,10 +2,13 @@ import React, { useState, useContext } from 'react';
 import {login} from '../../Services/authService.js';
 import { AuthContext } from '../../App.js';
 import axiosProvider from '../../Services/axiosProvider.js';
+import { useHistory } from 'react-router-dom';
 
 const LoginForm = props => {
 
-    const { loginState, setLoginState } = useContext(AuthContext);
+    let history = useHistory();
+
+    const { setLoginState } = useContext(AuthContext);
 
     const [ formState, updateFormState ] = useState({
         email: '',
@@ -20,12 +23,14 @@ const LoginForm = props => {
             localStorage.setItem('userId', response.data.userId)         
             axiosProvider.defaults.headers.common['auth'] = response.data.token;
             setLoginState({token: response.data.token})
+            
         })
         .catch(error => console.log(error))
         updateFormState({
             email: '',
             password: ''
         })
+        history.push('/')
     }
 
     const handleChange = (event) => {  
@@ -35,12 +40,14 @@ const LoginForm = props => {
 
     return (
         <div>
-            <form onSubmit={handleFormSubmit}>
-                <label>Email:</label>
-                    <input type="text" name="email" value={formState.email} onChange={ e => handleChange(e)}/>
+            <form className="center" onSubmit={handleFormSubmit}>
+                <label className="paddingLeft31">Email:</label>
+                    <input className="darkBlueBorder"  name="email" value={formState.email} onChange={ e => handleChange(e)}/>
+                    <br></br>
                 <label>Password:</label>
-                    <textarea name="password" value={formState.password} onChange={ e => handleChange(e)} />
-                <input type="submit" value="Submit" />
+                    <input className="darkBlueBorder" name="password" value={formState.password} onChange={ e => handleChange(e)} />
+                    <br></br>
+                <input className="marginLeft120" type="submit" value="Submit" />
             </form>
         </div>
     )

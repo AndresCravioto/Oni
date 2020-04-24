@@ -3,10 +3,15 @@ import { Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
 
 const photos = [
   { src: '/images/ned.jpeg' },
+  { src: '/images/trabajoHonesto.png' },
   { src: '/images/dog.png' },
   { src: '/images/sad.png' },
   { src: '/images/fry.jpg' },
-  { src: '/images/web.png' }
+  { src: '/images/web.png' },
+  { src: '/images/jurassic.png' },
+  { src: '/images/crazyDog.jpg' },
+  { src: '/images/donaldDuck.png' },
+  
 ];
 
 const initialState = {

@@ -17,7 +17,6 @@ export default class Home extends Component {
     this.setState({
       filterCategoriesBy: textToFilter
     });
-    console.log(this.state)
   }
 
   

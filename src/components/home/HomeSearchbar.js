@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const HomeSearchbar = props => {
 
 return (
     <div className="marginBot">
         <div className="hero is-medium is-primary is-bold">
-            <div className="hero-body">
+            <Link className="hero-body" to='/meme'>
                 <div className="container">
                 <h1 className="title">
-                    Primary bold title
+                    Create a meme and share it
                 </h1>
                 <h2 className="subtitle">
-                    Primary bold subtitle
+                    Or look for one in our collection!
                 </h2>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="hero-foot">
             <nav className="tabs is-boxed is-fullwidth">

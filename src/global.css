@@ -60,3 +60,33 @@
 .topPadding5 {
     padding-top: 5px;
 }
+
+.mainBackground {
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+
+.paddingLeft13 {
+    padding-left: 13px;
+}
+
+.paddingLeft31 {
+    padding-left: 31px;
+}
+
+.marginLeft120 {
+    margin-left: 120px;
+}
+
+.center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+  }
+
+  .darkBlueBorder {
+    border: 3px solid #015e7a;
+  }

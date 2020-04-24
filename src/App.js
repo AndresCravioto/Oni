@@ -19,14 +19,15 @@ function App() {
 
   const [loginState, setLoginState] = useState(
     {
-      token: 'Hola'
+      token: '',
+      username: ''
     }
   )
 
 
 return (
     <AuthContext.Provider value = {{loginState, setLoginState}}>
-      <div className="App">
+      <div className="App mainBackground">
         <Navbar/>
         <Switch>
           <Route exact path='/' render={() => <Home/>}/>

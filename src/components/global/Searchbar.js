@@ -19,7 +19,6 @@ const Searchbar = props => {
 
     const handleChange = (event) => {  
         const { name, value } = event.target;
-        console.log(formState)
         updateFormState(Object.assign({}, formState, {[name]: value}))
         props.setFilterCategories(event.target.value);
     }

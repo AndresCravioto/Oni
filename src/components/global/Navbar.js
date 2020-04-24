@@ -4,21 +4,25 @@ import { AuthContext } from '../../App.js';
 
 const Navbar = props => {
 
-    const { loginState } = useContext(AuthContext);
+    const { loginState, setLoginState } = useContext(AuthContext);
+
+    const handleLogout = (event) => {  
+        setLoginState({token: ''})
+    }
+
 
     const token = loginState.token;
-
-    console.log(token);
+    console.log(loginState)
 
 return (
         <div>
-            <nav className="navbar has-shadow is-transparent">
+            <nav className="navbar has-shadow is-transparent mainBackground">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="wa">
-                        <Link className="logo" to='/'>
-                        <img src= '/images/memestack.png' width="120" height="" />        
+                    <div className="navbar-item" href="wa">
+                        <Link className="logo paddingLeft13" to='/'>
+                        <img src= '/images/memestack.png' width="120" height="" alt=""/>        
                         </Link>
-                    </a>
+                    </div>
                     <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
                         <span></span>
                         <span></span>
@@ -32,35 +36,42 @@ return (
 
                     <div className="navbar-end">
                         <div className="topPadding5">
-                            <a class="button is-white is-medium is-facebook darkblue">
-                                <span class="icon">
-                                <i class="fab fa-facebook fa-lg darkblue"></i>
+                            <div className="button is-white is-medium is-facebook darkblue">
+                                <span className="icon">
+                                <i className="fab fa-facebook fa-lg darkblue"></i>
                                 </span>
-                            </a>
-                            <a class="button is-white is-medium is-twitter darkblue">
-                                <span class="icon">
-                                <i class="fab fa-twitter fa-lg darkblue"></i>
+                            </div>
+                            <div className="button is-white is-medium is-twitter darkblue">
+                                <span className="icon">
+                                <i className="fab fa-twitter fa-lg darkblue"></i>
                                 </span>
-                            </a>
-                            <a class="button is-white is-medium darkblue">
-                                <span class="icon">
-                                <i class="fab fa-instagram fa-lg darkblue"></i>
+                            </div>
+                            <div className="button is-white is-medium darkblue">
+                                <span className="icon">
+                                <i className="fab fa-instagram fa-lg darkblue"></i>
                                 </span>
-                            </a>
-                            <a class="button is-white is-medium darkblue">
-                                <span class="icon">
-                                <i class="fab fa-youtube fa-lg darkblue"></i>
+                            </div>
+                            <div className="button is-white is-medium darkblue">
+                                <span className="icon">
+                                <i className="fab fa-youtube fa-lg darkblue"></i>
                                 </span>
-                            </a>
+                            </div>
                         </div>
                         <div className="navbar-item">
                         <div className="buttons">
+                            {token === '' ? 
                             <Link className="button darkblue" to='/signup'>
                                 Signup
-                            </Link>
+                            </Link> 
+                            : <div>{loginState.userId}</div>}
+                            {token === '' ? 
                             <Link className="button darkblue" to='/login'>
                                 Login
-                            </Link>
+                            </Link> : 
+                            <Link className="button darkblue" to='/' onClick={ e => handleLogout(e)}>
+                                Logout
+                            </Link>}
+                            
                         </div>
                         </div>
                     </div>
