@@ -90,3 +90,12 @@
   .darkBlueBorder {
     border: 3px solid #015e7a;
   }
+
+  .justify {
+      justify-content: center;
+  }
+
+  .align > div > div {
+      display: flex;
+      align-items: center;
+  }

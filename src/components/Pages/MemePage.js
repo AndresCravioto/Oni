@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
 
 const photos = [
+  { src: '/images/donaldDuck.png' },
   { src: '/images/ned.jpeg' },
   { src: '/images/trabajoHonesto.png' },
   { src: '/images/dog.png' },
@@ -10,7 +11,10 @@ const photos = [
   { src: '/images/web.png' },
   { src: '/images/jurassic.png' },
   { src: '/images/crazyDog.jpg' },
-  { src: '/images/donaldDuck.png' },
+  { src: '/images/blackMan.png' },
+  { src: '/images/winniePooh.png' },
+  { src: '/images/womanCat.png' },
+  { src: '/images/skinner.png' },
   
 ];
 
@@ -154,7 +158,7 @@ class MemePage extends React.Component {
     var newHeight = newWidth / wrh;
     const textStyle = {
       fontFamily: "Impact",
-      fontSize: "50px",
+      fontSize: "30px",
       textTransform: "uppercase",
       fill: "#FFF",
       stroke: "#000",
@@ -163,7 +167,10 @@ class MemePage extends React.Component {
 
     return (
       <div>
-        <div className="main-content">
+        <div className="main-content justify">
+          <div>
+            <p>Click a template to create and download your meme!</p>
+          </div>
           <div className="content">
             {photos.map((image, index) => (
               <div className="image-holder" key={image.src}>

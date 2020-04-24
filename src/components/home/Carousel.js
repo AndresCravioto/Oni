@@ -14,7 +14,7 @@ export default class Carousel extends Component {
       var settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3050,
@@ -22,27 +22,26 @@ export default class Carousel extends Component {
       };
       return (
         <div className="sidePaddings bottomMargin50">
-            <h1 className="carouselTitle">Popular Categories</h1>
-          <Slider {...settings} className="hasShadow">
-          <div className="carouselImageContainer">
-            <h4 className="textOnImage alignLeft whiteText boldText"><p className="carouselImagePhrase">Nunca juegues solo!</p><br></br><p className="carouselImageTitle halfLineHeight">Gaming</p></h4>
+            <h1 className="carouselTitle darkblue center">Popular Memes</h1>
+          <Slider {...settings} className="hasShadow align">
+            <div className="carouselImageContainer">
                 <img src={process.env.PUBLIC_URL + '/images/10lineasCodigo.png'} alt="" width="300px"/>
             </div>
             <div>
                <img src={process.env.PUBLIC_URL + '/images/donaldFinal.png'} alt="" width="400px"/>
            </div>
             <div>
-               <img src={process.env.PUBLIC_URL + '/images/crazyDogCat.png'} alt="" width="260px"/>
+               <img src={process.env.PUBLIC_URL + '/images/crazyDogCat.png'} alt="" width="240px"/>
            </div>
             <div>
             <img src={process.env.PUBLIC_URL + '/images/jurassicTv.png'} alt="" width="450px"/>
             </div>
             <div>
-               <img src={process.env.PUBLIC_URL + '/images/donaldFinal.png'} alt="" width="200px"/>
+               <img src={process.env.PUBLIC_URL + '/images/winnieMail.png'} alt="" width="450px"/>
            </div>
-            <div>
-              <h3>6</h3>
-            </div>
+           <div>
+               <img src={process.env.PUBLIC_URL + '/images/skinnerExam.png'} alt="" width="450px"/>
+           </div>
           </Slider>
         </div>
       );
