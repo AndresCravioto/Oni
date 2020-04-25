@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
-//import { createMeme } from '../../Services/categoryService';
+import { createMeme } from '../../Services/memeService';
 
 let memeBody = {
   userId: '',
@@ -139,9 +139,9 @@ class MemePage extends React.Component {
       const a = document.createElement("a");
       a.download = "meme.png";
       a.href = canvasdata;
-      memeBody.image = a.href;
       memeBody.userId = localStorage.getItem('userId');
-      //createMeme(a.href)
+      memeBody.image = 1;
+      createMeme(memeBody)
       document.body.appendChild(a);
       a.click();
     };

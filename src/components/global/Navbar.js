@@ -9,14 +9,9 @@ const Navbar = props => {
     const handleLogout = (event) => {  
         setLoginState({token: ''})
     }
-
-    console.log(loginState)
-
     const token = loginState.token;
     const username = loginState.username;
-
-    console.log(username)
-
+    
 return (
         <div>
             <nav className="navbar has-shadow is-transparent mainBackground">

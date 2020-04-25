@@ -25,8 +25,7 @@ const ProfileForm = props => {
         history.push('/')
     }
 
-    const handleChange = (event) => {  
-        console.log(loginState)
+    const handleChange = (event) => {
         const { name, value } = event.target;
         updateFormState(Object.assign({}, formState, {[name]: value}))
     }

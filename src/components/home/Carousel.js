@@ -14,7 +14,7 @@ export default class Carousel extends Component {
       var settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -41,6 +41,15 @@ export default class Carousel extends Component {
            </div>
            <div>
                <img src={process.env.PUBLIC_URL + '/images/skinnerExam.png'} alt="" width="450px"/>
+           </div>
+           <div>
+               <img src={process.env.PUBLIC_URL + '/images/fryUgly.png'} alt="" width="450px"/>
+           </div>
+           <div>
+               <img src={process.env.PUBLIC_URL + '/images/blackLate.png'} alt="" width="500px"/>
+           </div>
+           <div>
+               <img src={process.env.PUBLIC_URL + '/images/fryError.png'} alt="" width="450px"/>
            </div>
           </Slider>
         </div>
