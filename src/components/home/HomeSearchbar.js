@@ -4,31 +4,16 @@ import { Link } from 'react-router-dom';
 const HomeSearchbar = props => {
 
 return (
-    <div className="marginBot">
-        <div className="hero is-medium is-primary is-bold">
-            <Link className="hero-body" to='/meme'>
-                <div className="container">
-                <h1 className="title">
-                    Create a meme and share it
-                </h1>
-                <h2 className="subtitle">
-                    Or look for one in our collection!
-                </h2>
-                </div>
+    <div>
+        <div className="hero-image">
+            <Link className="hero-text" to='/meme'>
+                <p className="heroTitle">Meme Stack</p>
+                <p className="heroTitle2">Best solution against depression</p>
+                <h2>Click here to make a meme</h2>
             </Link>
         </div>
         <div className="hero-foot">
             <nav className="tabs is-boxed is-fullwidth">
-                <div className="container">
-                    <ul>
-                    <li className="is-active">
-                        <p>Overview</p>
-                    </li>
-                    <li>
-                        <p>Modifiers</p>
-                    </li>
-                    </ul>
-                </div>
             </nav>
         </div>
     </div>

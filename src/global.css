@@ -129,3 +129,25 @@
   .fontSize32 {
       font-size: 32px;
   }
+
+  .hero-image {
+    background-image: url("/images/hero1.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+  .hero-text {
+    text-align: center;
+    left: 50%;
+    color: white;
+  }
+
+  .heroTitle {
+      padding-top: 128px;
+      font-size: 64px;
+  }
+
+  .heroTitle2 {
+    font-size: 64px;
+}
