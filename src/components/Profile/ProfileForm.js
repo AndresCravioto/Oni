@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import {updateUser} from '../../Services/authService.js';
+import { useHistory } from 'react-router-dom';
+import { AuthContext } from '../../App.js';
 
 const ProfileForm = props => {
+
+    const { loginState, setLoginState } = useContext(AuthContext);
+
+    let history = useHistory();
 
     const [ formState, updateFormState ] = useState({
         name: '',
@@ -16,12 +22,17 @@ const ProfileForm = props => {
         updateFormState({
             name: '',
         })
+        history.push('/')
     }
 
     const handleChange = (event) => {  
-        console.log(formState)
+        console.log(loginState)
         const { name, value } = event.target;
         updateFormState(Object.assign({}, formState, {[name]: value}))
+    }
+
+    const handleUpdate = (event) => {
+        setLoginState({username: formState.name})
     }
 
     return (
@@ -35,7 +46,7 @@ const ProfileForm = props => {
                     <br></br>
                 <label className="paddingLeft47">Age:</label>
                     <input className="darkBlueBorder" type="text" name="age" value={formState.age} onChange={ e => handleChange(e)}/>
-                <input className="marginLeft100" type="submit" value="Update Profile" />
+                <input className="marginLeft100" type="submit" value="Update Profile" onClick={ e => handleUpdate(e)}/>
                 <div className="height600"></div>
             </form>
         </div>

@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/global/Navbar.js';
 import Home from './components/Pages/Home.js';
 import Categories from './components/Pages/Categories';
-import CreateCategory from './components/Pages/CreateCategory';
 import Login from './components/Pages/Login';
 import Signup from './components/Pages/Signup';
 import Profile from './components/Pages/Profile';

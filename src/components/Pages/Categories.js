@@ -9,11 +9,6 @@ export default class Home extends Component {
 
   handleSearch = (textToFilter) => {
 
-    let state = {
-      categories: '',
-      filterCategoriesBy: '',
-    }
-
     this.setState({
       filterCategoriesBy: textToFilter
     });

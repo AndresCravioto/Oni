@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
-import { createMeme } from '../../Services/categoryService';
+//import { createMeme } from '../../Services/categoryService';
 
 let memeBody = {
   userId: '',
@@ -124,7 +124,6 @@ class MemePage extends React.Component {
   }
 
   convertSvgToImage = () => {
-    console.log(1)
     const svg = this.svgRef;
     let svgData = new XMLSerializer().serializeToString(svg);
     const canvas = document.createElement("canvas");
@@ -142,7 +141,6 @@ class MemePage extends React.Component {
       a.href = canvasdata;
       memeBody.image = a.href;
       memeBody.userId = localStorage.getItem('userId');
-      console.log(memeBody)
       //createMeme(a.href)
       document.body.appendChild(a);
       a.click();

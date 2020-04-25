@@ -8,22 +8,11 @@ const Searchbar = props => {
         categories: ''
     })
 
-
-    const handleInput = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-
-        this.props.setFilterCategories(e.target.value);
-    }
-
     const handleChange = (event) => {  
         const { name, value } = event.target;
         updateFormState(Object.assign({}, formState, {[name]: value}))
         props.setFilterCategories(event.target.value);
     }
-
-    const { searchValue } = formState;
 
 return (
     <div className="flex ">

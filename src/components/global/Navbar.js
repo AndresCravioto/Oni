@@ -62,7 +62,7 @@ return (
                         </div>
                         <div className="navbar-item">
                         <div className="buttons">
-                            {username != '' && token != '' ? 
+                            {username !== '' && token !== '' ? 
                                 <Link className="button darkblue" to='/profile'>
                                 Welcome {username}!
                                 </Link>
