@@ -20,7 +20,8 @@ function App() {
   const [loginState, setLoginState] = useState(
     {
       token: '',
-      username: ''
+      username: '',
+      userId: '',
     }
   )
 
@@ -32,7 +33,6 @@ return (
         <Switch>
           <Route exact path='/' render={() => <Home/>}/>
           <Route exact path='/categories' render={() => <Categories/>}/>
-          <Route exact path='/categories/create' render={() => <CreateCategory/>}/>
           <Route exact path='/login' render={() => <Login/>}/>
           <Route exact path='/signup' render={() => <Signup/>}/>
           <Route exact path='/profile' render={() => <Profile/>}/>

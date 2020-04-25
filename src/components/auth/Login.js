@@ -20,9 +20,11 @@ const LoginForm = props => {
         login(formState)      
         .then(response => {
             localStorage.setItem('token', response.data.token)
-            localStorage.setItem('userId', response.data.userId)         
+            localStorage.setItem('userId', response.data.userId)
             axiosProvider.defaults.headers.common['auth'] = response.data.token;
             setLoginState({token: response.data.token})
+            setLoginState({userId: response.data.userId})
+            setLoginState({username: response.data.username})
             
         })
         .catch(error => console.log(error))
@@ -48,6 +50,7 @@ const LoginForm = props => {
                     <input className="darkBlueBorder" name="password" value={formState.password} onChange={ e => handleChange(e)} />
                     <br></br>
                 <input className="marginLeft120" type="submit" value="Submit" />
+                <div className="height600"></div>
             </form>
         </div>
     )

@@ -16,8 +16,10 @@ import axiosProdiver from './axiosProvider.js';
     .catch(error => console.log(error))
   }
 
+
   const updateUser = userBody => {
-    return axiosProdiver.patch(`/profile/${userBody.params.userid}`, userBody)
+    console.log(userBody.userId)
+    return axiosProdiver.post(`/profile`, userBody, {headers: {'Content-Type': 'application/json', 'accept': 'application/json'}})
     .then(response => response.data)
     .catch(error => console.log(error))
   }

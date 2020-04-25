@@ -1,5 +1,11 @@
 import React from 'react';
 import { Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
+import { createMeme } from '../../Services/categoryService';
+
+let memeBody = {
+  userId: '',
+  image: ''
+};
 
 const photos = [
   { src: '/images/donaldDuck.png' },
@@ -15,7 +21,6 @@ const photos = [
   { src: '/images/winniePooh.png' },
   { src: '/images/womanCat.png' },
   { src: '/images/skinner.png' },
-  
 ];
 
 const initialState = {
@@ -119,6 +124,7 @@ class MemePage extends React.Component {
   }
 
   convertSvgToImage = () => {
+    console.log(1)
     const svg = this.svgRef;
     let svgData = new XMLSerializer().serializeToString(svg);
     const canvas = document.createElement("canvas");
@@ -134,6 +140,10 @@ class MemePage extends React.Component {
       const a = document.createElement("a");
       a.download = "meme.png";
       a.href = canvasdata;
+      memeBody.image = a.href;
+      memeBody.userId = localStorage.getItem('userId');
+      console.log(memeBody)
+      //createMeme(a.href)
       document.body.appendChild(a);
       a.click();
     };
@@ -167,10 +177,10 @@ class MemePage extends React.Component {
 
     return (
       <div>
-        <div className="main-content justify">
-          <div>
-            <p>Click a template to create and download your meme!</p>
-          </div>
+        <div className="center50 darkblue fontSize32">
+          <p>Click a template to create and download your meme!</p>
+        </div>
+        <div className="main-content justify sidePaddings">
           <div className="content">
             {photos.map((image, index) => (
               <div className="image-holder" key={image.src}>
@@ -241,6 +251,9 @@ class MemePage extends React.Component {
             </div>
           </ModalBody>
         </Modal>
+        <div className="height1000">
+          <p></p>
+        </div>
       </div>
     )
   }

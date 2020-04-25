@@ -24,6 +24,10 @@ class CategoryService {
     .then(response => response.data)
     .catch(error => console.log(error))
   }
+
+  createMeme = memeBody => {
+    console.log(1)
+  }
 }
 
 export default CategoryService;

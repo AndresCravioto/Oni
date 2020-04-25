@@ -34,6 +34,7 @@ const SignupForm = props => {
                 <label>Password:</label>
                     <input className="darkBlueBorder" name="password" value={formState.password} onChange={ e => handleChange(e)} />
                 <input className="marginLeft120" type="submit" value="Submit" />
+                <div className="height600"></div>
             </form>
         </div>
     )

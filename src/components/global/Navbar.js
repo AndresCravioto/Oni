@@ -10,9 +10,12 @@ const Navbar = props => {
         setLoginState({token: ''})
     }
 
+    console.log(loginState)
 
     const token = loginState.token;
-    console.log(loginState)
+    const username = loginState.username;
+
+    console.log(username)
 
 return (
         <div>
@@ -59,6 +62,13 @@ return (
                         </div>
                         <div className="navbar-item">
                         <div className="buttons">
+                            {username != '' && token != '' ? 
+                                <Link className="button darkblue" to='/profile'>
+                                Welcome {username}!
+                                </Link>
+                                : <Link className="button darkblue" to='/profile'>
+                                Welcome stranger!
+                            </Link> }
                             {token === '' ? 
                             <Link className="button darkblue" to='/signup'>
                                 Signup

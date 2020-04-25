@@ -77,13 +77,39 @@
     padding-left: 31px;
 }
 
+.paddingLeft35 {
+    padding-left: 35px;
+}
+
+.paddingLeft47 {
+    padding-left: 47px;
+}
+
 .marginLeft120 {
     margin-left: 120px;
+}
+
+.marginLeft100 {
+    margin-left: 100px;
+}
+
+.height1000 {
+    height:1000px;
+}
+
+.height600 {
+    height:600px;
 }
 
 .center {
     margin: auto;
     width: 20%;
+    padding: 10px;
+  }
+
+  .center50 {
+    margin: auto;
+    width: 50%;
     padding: 10px;
   }
 
@@ -98,4 +124,8 @@
   .align > div > div {
       display: flex;
       align-items: center;
+  }
+
+  .fontSize32 {
+      font-size: 32px;
   }
